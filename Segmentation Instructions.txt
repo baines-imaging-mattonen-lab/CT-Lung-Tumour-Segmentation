@@ -1,0 +1,61 @@
+Semi-automatic segmentation code instructions
+Author: Jaryd Christie
+Date: March 3, 2022
+
+Make sure all elements of the segmentation package are in the current working directory of MATLAB 
+
+Step 1a - Open algorithm GUI either through MATLAB and click RUN or create a desktop shortcut and double click icon.
+Step 1b - Allow the parallel computing initialization to complete (this will occur once).
+Steb 1c - Allow the dcm files to be convert to mat files and imported for each patient.
+
+
+Step 2a - Input a username to distinguish the study currently being performed (ex. John Doe October Experiment). 
+	 This name will be saved for if you quit the program and want to pick up from the same patient when returning.
+Step 2b - Choose the folder where you patients Dicom files are and choose any empty output folder where your results will go
+
+
+Step 3 - Once ready to begin the experiment, click the start button to start the program. (START button can be used to restart from the begin of a patient if a problem is encountered)
+
+
+Step 4a - In this step you can do many things:
+	* Set the Window/Level using the the presets
+	* Manually set the Window/Level 
+	* Scroll through the CT volume using the mouse wheel or the directional buttons on the keyboard (right & up - forward, left & down - backwards)
+	* Zoom using the magnifying button on the top right of the image (RESET VIEW - RESET VIEW TO ORGINAL SIZE AND MAGNIFICATION). Always deselect zoom after using zoom.
+Step 4b - Select the slice approximately in the middle of the of the tumour of interest .
+
+
+Step 5a - Use the SELECT ROI button to place a bounding box around the tumour of interest. Make sure the box completely encapsulates the perimeter of the entire tumour volume axially.
+	  Drag and resize the box using the points on the box until satisfied.
+	* Zoom using the magnifying button on the top right of the image (RESET VIEW - RESET VIEW TO ORGINAL SIZE AND MAGNIFICATION)
+Step 5b - Once satisfied with the box use the CONFIRM ROI button to finalize the box and initialize the segmentation process.
+
+
+Step 6 - Once completed, view the segmentation by scrolling through the CT volume using the mouse wheel or the directional buttons on the keyboard
+         (right & up - forward, left & down - backwards) 
+	* SEGMENTATION ON/OFF - TOGGLE THE SEGMENTATION COLOUR WASH ON AND OFF
+
+
+(Optional) Step 7 - Leave any desired comments about that specific patient or segmentation using the ADD COMMENT button.
+
+
+Step 8 - If the result is desirable, select CONTINUE to go on to the next patient.
+
+
+EDITTING STEPS
+Step 9a - If the results needs editing, select the START EDIT button to begin the editting process
+Step 9b - Use the cirle tool to edit the segmentation. If the circle turns RED it will delete that part of the segmentation and if it turns GREEN it will add to the segmentation.
+          Drag and resize the circle using the points on the circle  until satisfied.
+Step 9c - If a slice that has no segementation on it needs a segmentation added, WHILE START EDIT IS SELECTED, draw the desired shape on the CT image.
+	  Drag and resize the segmentation using the points on the circle until satisfied then DOUBLE CLICK the new segmentation to save it.
+Step 9d - This new segmentation can now be editted using the same technique as in step 9b.
+	  *At any time select EDIT COMPLETE to finalize the editting process
+
+
+Step 10 - Use the QUIT button to exit the program.
+
+
+
+	 
+
+
